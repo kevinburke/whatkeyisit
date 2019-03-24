@@ -1,8 +1,13 @@
-decision tree:
+# whatkeyisit
 
-parse all data as PEM block.
+Helps you determine what you are looking at.
 
-if PEM block:
-    parse DER data as all of the different private keys
-else:
-    parse all data as all of the different private keys
+### Usage
+
+```
+whatkeyisit *.{crt,key,pub}
+
+file.crt is a certificate, using the SHA256-RSA algorithm.
+The certificate is valid for hosts *.example.com, example.com.
+It expires on October 20, 2020.
+```
